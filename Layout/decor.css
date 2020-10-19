@@ -1,10 +1,16 @@
+
+/*Navigation bar*/
 .active{
-    border-bottom: 3px #0094c8;
+    border-bottom: 3px white;
     border-bottom-style: solid;
 }
 
+.navbar1{
+    background-color: #d14352;
+}
+
 .navbar2{
-    background-color: #00a2db;
+    background-color: #b33b48;
 }
 
 
@@ -16,23 +22,87 @@
     padding: 16px;
 }
 
-.carousel-inner img {
-    margin: auto;
+
+/* ------Carousel Sale----- */
+.Sale .itemSale{
+    max-width: 250px;
+    height: auto;
+    margin: 10px 30px 10px 30px;
 }
+/*img Sale */
+.Sale .listS {
+    text-align: center;
+}
+/* header Sale */
+.Sale .headS{
+    text-align: center;
+}
+
+/* ----Carousel NewItem---- */
+.NewItem .itemNew{
+    max-width: 250px;
+    height: auto;
+    margin: 10px 30px 10px 30px;
+}
+/*img New */
+.NewItem .listN {
+    text-align: center;
+}
+/* header NewItem */
+.NewItem .headN{
+    text-align: center;
+}
+
+/* ----Carousel BestSellers---- */
+.BestS .itemBest{
+    max-width: 250px;
+    height: auto;
+    margin: 10px 30px 10px 30px;
+}
+/*img Best */
+.BestS .listB {
+    text-align: center;
+}
+/* header Best Sellers */
+.BestS .headB{
+    text-align: center;
+}
+
+
+/* Left and right controls for all */
+.prevControl{
+    margin-left: -75px;
+}
+.nextControl{
+    margin-right: -75px;
+}
+/* for max-width:900px */
+@media screen and (max-width: 900px) {
+    /* Left and right controls */
+    .prevControl{
+        margin-left: -10px;
+    }
+    .nextControl{
+        margin-right: -10px;
+    }
+}
+
 
 /* Vertical menu */
 .vertical-menu {
-    width: 200px;
-    margin-top: 30px;
+    width: 225px;
 }
   
 .vertical-menu a {
-  background-color: #eee;
-  color: black;
+  background-color: #b33b48;
+  color: cornsilk ;
   display: block;
   padding: 12px;
   text-decoration: none;
   height: 77px;
+  border: 1px solid #4d1a1f;
+  font-weight: bold;
+  padding-top: 27px;
 }
 
 .vertical-menu a:hover {
@@ -40,6 +110,6 @@
 }
 
 .vertical-menu a.active {
-  background-color: #4CAF50;
+  background-color: #4d1a1f;
   color: white;
 }
