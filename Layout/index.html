@@ -46,21 +46,54 @@
                 <li><a href="" style="color: white;">Sale !</a></li>
                 <li><a href="" style="color: white;">New Items</a></li>
                 <li><a href="" style="color: white;">Best Sellers</a></li>
-                <li><a class="btn btn-primary" href="#" role="button" style="color: #b33b48; background-color: white;"><span class="glyphicon glyphicon-heart"></span>Favorite</a></li>
-                <li><a class="btn btn-primary" href="#" role="button" style="background-color:#b33b48; border-color: white; color: white;"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                <li><a class="btn btn-primary favorcart" href="#" role="button" style="color: #b33b48; background-color: white;"><span class="glyphicon glyphicon-heart"></span>Favorite</a></li>
+                <li><a class="btn btn-primary favorcart" href="#" role="button" style="background-color:#b33b48; border-color: white; color: white;"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
             </ul>
         </div>
     </div>
 
+    <!-- Menu Home -->
+    <link rel="stylesheet" href="MenuHome.css">
     <div class="row-no-gutters">
         <div class="vertical-menu col-sm-2">
-                <a href="#" class="active" style="font-size: 16px;"><span class="glyphicon glyphicon-list"></span>Categories</a>
-                <a href="#">Gift Cards</a> <!--dropdownmenu-->
-                <a href="#">Cushions & Soft Toys</a> <!--dropdownmenu-->
-                <a href="#">Coffee Mugs & Tea Cups</a> <!--dropdownmenu-->
-                <a href="#">Fashions & Accessories</a> <!--dropdownmenu-->
+                <a href="#" class="active menu" style="font-size: 16px;"><span class="glyphicon glyphicon-list"></span>Categories</a>
+                
+                <!-- Dropdown menu Cushions & Soft Toys -->
+                <div class="dropdown">
+                    <a class="dropdown-toggle menu" type="button" id="menuCS" data-toggle="dropdown">Cushions & Soft Toys
+                    <span class="caret-right"></span></a>
+                    <ul class="dropdown-menu rightMenu">
+                      <li><a href="#">Cushions</a></li>
+                      <li class="divider"></li> <!--Separates items inside the dropdown menu with a horizontal line-->
+                      <li><a href="#">Soft Toys</a></li>
+                    </ul>
+                  </div>
+
+                  <!--Dropdown menu Coffee Mugs & Tea Cups -->
+                  <div class="dropdown">
+                    <a class="dropdown-toggle menu" type="button" id="menuCT" data-toggle="dropdown">Coffee Mugs & Tea Cups
+                    <span class="caret-right"></span></a>
+                    <ul class="dropdown-menu rightMenu">
+                      <li><a href="#">Coffee Mugs</a></li>
+                      <li class="divider"></li> <!--Separates items inside the dropdown menu with a horizontal line-->
+                      <li><a href="#">Tea Cups</a></li>
+                    </ul>
+                  </div>
+
+                  <!--Dropdown menu Fashions & Accessories -->
+                  <div class="dropdown">
+                    <a class="dropdown-toggle menu" type="button" id="menuFA" data-toggle="dropdown">Fashions & Accessories
+                    <span class="caret-right"></span></a>
+                    <ul class="dropdown-menu rightMenu">
+                      <li><a href="#">Fashions</a></li>
+                      <li class="divider"></li> <!--Separates items inside the dropdown menu with a horizontal line-->
+                      <li><a href="#">Accessories</a></li>
+                    </ul>
+                  </div>  
+                <a class="menu" href="#">Gift Cards</a>
         </div>
 
+        <!-- Home Slide -->
         <div class="col-sm-10">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -261,7 +294,7 @@
     <div style="clear: both;"></div>
 
     <!-- FOOTER -->
-    <link rel="stylesheet" href="x.css">
+    <link rel="stylesheet" href="../Footer/x.css">
   <footer class="site-footer">
     <div class="container">
       <div class="row">

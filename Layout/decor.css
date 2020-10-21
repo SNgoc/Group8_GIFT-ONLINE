@@ -14,7 +14,7 @@
 }
 
 
-.btn{
+.btn.favorcart{
     border-radius: 30px;
     font-weight: bold;
     border-style: 5px double;
@@ -36,6 +36,10 @@
 /* header Sale */
 .Sale .headS{
     text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: blue;
+    background-color: palegreen;
 }
 
 /* ----Carousel NewItem---- */
@@ -51,6 +55,10 @@
 /* header NewItem */
 .NewItem .headN{
     text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: greenyellow;
+    background-color: green;
 }
 
 /* ----Carousel BestSellers---- */
@@ -66,6 +74,10 @@
 /* header Best Sellers */
 .BestS .headB{
     text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: goldenrod;
+    background-color: black;
 }
 
 
@@ -85,31 +97,4 @@
     .nextControl{
         margin-right: -10px;
     }
-}
-
-
-/* Vertical menu */
-.vertical-menu {
-    width: 225px;
-}
-  
-.vertical-menu a {
-  background-color: #b33b48;
-  color: cornsilk ;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-  height: 77px;
-  border: 1px solid #4d1a1f;
-  font-weight: bold;
-  padding-top: 27px;
-}
-
-.vertical-menu a:hover {
-  background-color: #ccc;
-}
-
-.vertical-menu a.active {
-  background-color: #4d1a1f;
-  color: white;
 }
