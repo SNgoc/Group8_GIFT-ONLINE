@@ -1,0 +1,45 @@
+.active{
+    border-bottom: 3px #0094c8;
+    border-bottom-style: solid;
+}
+
+.navbar2{
+    background-color: #00a2db;
+}
+
+
+.btn{
+    border-radius: 30px;
+    font-weight: bold;
+    border-style: 5px double;
+    background-color: white;
+    padding: 16px;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+/* Vertical menu */
+.vertical-menu {
+    width: 200px;
+    margin-top: 30px;
+}
+  
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  height: 77px;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}

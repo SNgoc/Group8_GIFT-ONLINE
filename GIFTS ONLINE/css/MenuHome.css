@@ -1,0 +1,63 @@
+/* Vertical menu */
+.vertical-menu {
+    width: 223px;
+}
+  
+.vertical-menu .menu {
+  background-color: #b33b48;
+  color: cornsilk ;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  height: 77px;
+  border: 1px solid #4d1a1f;
+  font-weight: bold;
+  padding-top: 27px;
+}
+
+.vertical-menu a:hover {
+  background-color: #4f9bda;
+}
+
+.vertical-menu a.active {
+  background-color: #4d1a1f;
+  color: white;
+}
+
+/* Dropright menu */
+.vertical-menu .rightMenu{
+    position:absolute;
+    float:right;
+    top: -4px;
+    left: 222px;
+    height: 81px;
+    text-align: center;
+    background-color:#4f9bda;
+    font-family: fantasy;
+    width: 200px;
+}
+.vertical-menu .rightMenu:hover{
+    background-color: #d14352;
+}
+.vertical-menu .rightMenu .divider{
+    background-color: #d14352;
+    height: 1px;
+}
+/* Auto dropdown menu */
+@media only screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+}
+
+/* Caret-right */
+.vertical-menu .caret-right {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid;
+    display: inline-block;
+    height: 0;
+    opacity: 0.3;
+    vertical-align: middle;
+    width: 0;
+}
