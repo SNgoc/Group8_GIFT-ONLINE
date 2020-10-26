@@ -76,15 +76,18 @@
 /*PRODUCT DETAILS*/
 
 /* Background Img Slideshow container */
+.backgroundP{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .slideshow-container {
-  background: #a53f3ff1;
+  background:white;
   width: fit-content;
 }
 
 /* Background img Slides */
 .mySlides {
   display: none;
-  padding: 20px;
+  padding: 0px;
   text-align: center;
 }
 /* IMG */
@@ -96,8 +99,8 @@
 /* background img thumbnail container */
 .dot-container {
     text-align: center;
-    background: #a53f3ff1;
-    margin: 0px -15px -15px -15px;
+    background:white;
+    margin: 15px -15px -15px -15px;
 }
 
 /* Image thumbnail */
@@ -110,6 +113,13 @@
   background-color: #bbb;
   border-radius: 50%;
   transition: background-color 0.6s ease;
+}
+.dot img{
+    width: 90px;
+    height: 90px;
+}
+.dot img:hover{
+    border: solid 2px #3785eb;
 }
 
 /* INFORMATIVE PRODUCT */
