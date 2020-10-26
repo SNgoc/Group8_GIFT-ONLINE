@@ -163,7 +163,16 @@
 }
 
 
+footer .ftlinks li {
+  color: white;
+}
+
 footer .ftlinks li a{
+  color: white;
+  font-weight: bold;
+}
+
+footer .ftlinks .phonenum{
   color: white;
   font-weight: bold;
 }
