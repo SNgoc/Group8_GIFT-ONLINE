@@ -76,7 +76,7 @@
 /*PRODUCT DETAILS*/
 
 /* Background Img Slideshow container */
-.backgroundP{
+.backgroundP{/*border box shadow*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .slideshow-container {
@@ -121,11 +121,26 @@
 .dot img:hover{
     border: solid 2px #3785eb;
 }
-
+/* User rate */
+.rate .checked{
+    color: orange;
+}
 /* INFORMATIVE PRODUCT */
-.InforP .line {
+.line {
     border-bottom: 1px solid;
     margin-top: 10px;
+}
+h4.headPD{
+    text-align: center;
+    font-weight: bolder;
+}
+h5.Htext{
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+ul.textlist li{
+    margin-left: 30px;
 }
 
 /* ADD TO FAVORITE, CART, BUY BUTTON */

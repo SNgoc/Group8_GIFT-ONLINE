@@ -28,6 +28,8 @@
     max-width: 250px;
     height: auto;
     margin: 10px 30px 10px 30px;
+    /* border box shadow item */
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*img Sale */
 .Sale .listS {
@@ -47,6 +49,8 @@
     max-width: 250px;
     height: auto;
     margin: 10px 30px 10px 30px;
+    /* border box shadow item */
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*img New */
 .NewItem .listN {
@@ -66,6 +70,8 @@
     max-width: 250px;
     height: auto;
     margin: 10px 30px 10px 30px;
+    /* border box shadow item */
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*img Best */
 .BestS .listB {
@@ -83,10 +89,18 @@
 
 /* Left and right controls for all */
 .prevControl{
+    color: black;
     margin-left: -75px;
 }
 .nextControl{
+    color: black;
     margin-right: -75px;
+}
+.prevControl .glyphicon-chevron-left {
+    font-size: 20px;
+}
+.nextControl .glyphicon-chevron-right {
+    font-size: 20px;
 }
 /* for max-width:900px */
 @media screen and (max-width: 900px) {
