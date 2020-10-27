@@ -1,4 +1,13 @@
 
+/* Logo */
+.logo{
+    height: 25px;
+}
+.logoName{
+    width: 75px;
+    height: 25px;
+}
+
 /*Navigation bar*/
 .active{
     border-bottom: 3px white;
