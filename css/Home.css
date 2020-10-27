@@ -1,0 +1,114 @@
+
+/*Navigation bar*/
+.active{
+    border-bottom: 3px white;
+    border-bottom-style: solid;
+}
+
+.navbar1{
+    background-color: #d14352;
+}
+
+.navbar2{
+    background-color: #b33b48;
+}
+
+
+.btn.favorcart{
+    border-radius: 30px;
+    font-weight: bold;
+    border-style: 5px double;
+    background-color: white;
+    padding: 16px;
+}
+
+
+/* ------Carousel Sale----- */
+.Sale .itemSale{
+    max-width: 250px;
+    height: auto;
+    margin: 10px 30px 10px 30px;
+    /* border box shadow item */
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*img Sale */
+.Sale .listS {
+    text-align: center;
+}
+/* header Sale */
+.Sale .headS{
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: blue;
+    background-color: palegreen;
+}
+
+/* ----Carousel NewItem---- */
+.NewItem .itemNew{
+    max-width: 250px;
+    height: auto;
+    margin: 10px 30px 10px 30px;
+    /* border box shadow item */
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*img New */
+.NewItem .listN {
+    text-align: center;
+}
+/* header NewItem */
+.NewItem .headN{
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: greenyellow;
+    background-color: green;
+}
+
+/* ----Carousel BestSellers---- */
+.BestS .itemBest{
+    max-width: 250px;
+    height: auto;
+    margin: 10px 30px 10px 30px;
+    /* border box shadow item */
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*img Best */
+.BestS .listB {
+    text-align: center;
+}
+/* header Best Sellers */
+.BestS .headB{
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: goldenrod;
+    background-color: black;
+}
+
+
+/* Left and right controls for all */
+.prevControl{
+    color: black;
+    margin-left: -75px;
+}
+.nextControl{
+    color: black;
+    margin-right: -75px;
+}
+.prevControl .glyphicon-chevron-left {
+    font-size: 20px;
+}
+.nextControl .glyphicon-chevron-right {
+    font-size: 20px;
+}
+/* for max-width:900px */
+@media screen and (max-width: 900px) {
+    /* Left and right controls */
+    .prevControl{
+        margin-left: -10px;
+    }
+    .nextControl{
+        margin-right: -10px;
+    }
+}

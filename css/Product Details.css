@@ -1,0 +1,195 @@
+/* Product Details Page */
+
+/*Navigation bar*/
+.active{
+    border-bottom: 3px rgb(190, 43, 43);
+    border-bottom-style: solid;
+}
+
+.navbar1{
+    background-color: #d14352;
+}
+
+.navbar2{
+    background-color: #b33b48;
+}
+
+/* Category */
+.navbar3 .active{
+    margin-left: 95px;
+}
+
+.navbar3 .ddnav3{
+    margin-left: 108px;
+}
+
+.navbar3 li a{
+    color: white;
+}
+
+.navbar3 li a:hover{
+    background-color: #4f9bda;
+}
+
+.navbar3{
+    background-color: #d14352;
+}
+
+.btn{
+    border-radius: 30px;
+    font-weight: bold;
+    border-style: 5px double;
+    background-color: white;
+    padding: 16px;
+}
+
+/*dropdown nav3*/
+.ddnav3 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .ddnav3 .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #4f9bda;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .ddnav3 .dropdown-menu li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .ddnav3 .dropdown-menu li a:hover {
+      background-color: #d14352;
+      color:  white;
+    }
+  
+  .ddnav3:hover .dropdown-menu {display: block;}
+
+
+/*PRODUCT DETAILS*/
+
+/* Background Img Slideshow container */
+.backgroundP{/*border box shadow*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.slideshow-container {
+  background:white;
+  width: fit-content;
+}
+
+/* Background img Slides */
+.mySlides {
+  display: none;
+  padding: 0px;
+  text-align: center;
+}
+/* IMG */
+.mySlides img {
+    width: 600px;
+    height: 500px;
+}
+
+/* background img thumbnail container */
+.dot-container {
+    text-align: center;
+    background:white;
+    margin: 15px -15px -15px -15px;
+}
+
+/* Image thumbnail */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+.dot img{
+    width: 90px;
+    height: 90px;
+}
+.dot img:hover{
+    border: solid 2px #3785eb;
+}
+/* User rate */
+.rate .checked{
+    color: orange;
+}
+/* INFORMATIVE PRODUCT */
+.line {
+    border-bottom: 1px solid;
+    margin-top: 10px;
+}
+h4.headPD{
+    text-align: center;
+    font-weight: bolder;
+}
+h5.Htext{
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+ul.textlist li{
+    margin-left: 30px;
+}
+
+/* ADD TO FAVORITE, CART, BUY BUTTON */
+/* For Tablet and mobile */
+.Addbtn {
+    margin-top: 200px;
+}
+.addFavorite button {
+    width: 250px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: #b33b48;
+}
+.addCart button {
+    width: 250px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: #b33b48;
+
+}
+.buyNow button{
+    margin-top: 15px;
+    width: 530px;
+    height: 40px;
+    background-color: #4f9bda;
+}
+/* For desktop */
+@media only screen and (min-width: 1366px) {
+    .addFavorite button {
+        margin-left: 0px;
+        width: 350px;
+        height: 50px;
+        background-color: #b33b48;
+    }
+    .addCart button {
+        margin-left: 0px;
+        width: 350px;
+        height: 50px;
+        background-color: #b33b48;
+    }
+    .buyNow button{
+        margin-top: 15px;
+        width: 730px;
+        height: 50px;
+        background-color: #4f9bda;
+    }
+}
+
+/*Footer*/
+footer .ftlinks li a{
+    color: white;
+}

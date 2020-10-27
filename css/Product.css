@@ -1,0 +1,92 @@
+
+/*Navigation bar*/
+.active{
+    border-bottom: 3px rgb(190, 43, 43);
+    border-bottom-style: solid;
+}
+
+.navbar1{
+    background-color: #d14352;
+}
+
+.navbar2{
+    background-color: #b33b48;
+}
+
+/* Category */
+.navbar3 .active{
+    margin-left: 95px;
+}
+
+.navbar3 .ddnav3{
+    margin-left: 108px;
+}
+
+.navbar3 li a{
+    color: white;
+}
+
+.navbar3 li a:hover{
+    background-color: #b33b48;
+}
+
+.navbar3{
+    background-color: #3a87a5;
+}
+
+.btn{
+    border-radius: 30px;
+    font-weight: bold;
+    border-style: 5px double;
+    background-color: white;
+    padding: 16px;
+}
+
+/*dropdown nav3*/
+.ddnav3 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .ddnav3 .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:  #3b9bb3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .ddnav3 .dropdown-menu li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .ddnav3 .dropdown-menu li a:hover {
+      background-color: #b33b48;
+      color:  white;
+    }
+  
+  .ddnav3:hover .dropdown-menu {display: block;}
+
+
+/*Products*/
+.products .panel-heading{
+    background-color: #d14352;
+}
+
+.products .panel-default:hover{
+    background-color: #d14352;
+}
+
+.products .panel-body{
+    font-weight: bold;
+}
+
+
+/*Footer*/
+footer .ftlinks li a{
+    color: white;
+}
