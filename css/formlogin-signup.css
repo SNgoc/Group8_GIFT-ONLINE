@@ -43,3 +43,8 @@
   background-color: #4CAF50;
   color: white;
 }
+
+/*Login*/
+.loginform .lsbtn{
+  background-color: black;
+}

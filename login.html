@@ -31,7 +31,7 @@
                 <li class="active"><a href="Product page.html" style="background-color: #4d1a1f; color: white;">SHOP</a></li>
                 <li><a href="" style="color: white;">SHOP LOCATION</a></li>
                 <li><a href="" style="color: white;">ABOUT US</a></li>
-                <li><a href="" style="color: white;"><span class="glyphicon glyphicon-user"></span>Login</a></li>
+                <li><a href="login.html" style="color: white;"><span class="glyphicon glyphicon-user"></span>Login</a></li>
                 <li><a href="" style="background-color: limegreen; color: white;">Sign up</a></li>
             </ul>
         </div>
@@ -52,17 +52,23 @@
         </div>
     </div>
 
-      <form class="form-horizontal" action="" onsubmit="return check()">
+    <div class="panel panel-default">
+      <div class="panel-heading text-center" style="color: #d14352; font-weight: bolder; font-size: 20px;">Login</div>
+    </div>
+    <br>
+
+    <div class="container">
+    <form class="form-horizontal" action="" onsubmit="return check()">
         <div class="form-group">
           <label class="control-label col-sm-2" for="email">Email:</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" pattern="^\w+@\w+\.[a-z]{3}" required id="email" placeholder="Enter email">
+            <input type="email" style="width: 400px;" class="form-control" pattern="^\w+@\w+\.[a-z]{3}" required id="email" placeholder="Enter email">
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2" for="pwd">Password:</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\w]).{6,12}" required id="pwd" placeholder="Enter password">
+            <input type="password" style="width: 400px;" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\w]).{6,12}" required id="pwd" placeholder="Enter password">
           </div>
         </div>
         <div class="form-group">
@@ -74,11 +80,12 @@
         </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" onclick="check" class="btn btn-default">Submit</button>
-            <button type="reset" class="btn btn-default">Reset</button>
+            <button type="submit" onclick="check" class="btn btn-default" style="color:#d14352; font-weight: bold; border-radius: 30px;">Sign in</button>
+            <button type="button" class="btn btn-default" style="background-color: limegreen; color: white; font-weight: bold; border-radius: 30px;">Sign up</button>
           </div>
         </div>
       </form>
+    </div>  
       <script>
         function check(){
           var name1 = document.getElementById("email").value;
