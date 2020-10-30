@@ -32,7 +32,7 @@
                 <li class="active"><a href="Product page.html" style="background-color: #4d1a1f; color: white;">SHOP</a></li>
                 <li><a href="" style="color: white;">SHOP LOCATION</a></li>
                 <li><a href="about us.html" style="color: white;">ABOUT US</a></li>
-                <li><a href="login.html" style="color: white;"><span class="glyphicon glyphicon-user"></span>Login</a></li>
+                <li><a href="" style="color: white;"><span class="glyphicon glyphicon-user"></span>Login</a></li>
                 <li><a href="" style="background-color: limegreen; color: white;">Sign up</a></li>
             </ul>
         </div>
@@ -50,8 +50,12 @@
                 <li><a href="" style="color: white;">Sale !</a></li>
                 <li><a href="" style="color: white;">New Items</a></li>
                 <li><a href="" style="color: white;">Best Sellers</a></li>
+
                 <li><a class="btn btn-primary" href="#" role="button" style="color: #b33b48; background-color: white;"><span class="glyphicon glyphicon-heart"></span>Favorite</a></li>
-                <li><a class="btn btn-primary" href="#" role="button" style="background-color:#b33b48; border-color: white; color: white;"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                <!-- SHOPPING CART -->
+                <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart" style="background-color:#b33b48; border-color: white; color: white;">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>Cart (<span class="total-count"></span>)</button>
+                </li>
             </ul>
         </div>
     </div>
@@ -169,15 +173,21 @@
             </div>
             <!-- ADD TO FAVORITE, CART, BUY BUTTON -->
             <div class="container Addbtn">
+                
                 <div class="addFavorite col-sm-4">
                     <span><button type="button" class="btn btn-info">ADD TO FAVORITE</button></span>
                 </div>
+                
+                <!-- ADD TO CART -->
                 <div class="addCart col-sm-4">
-                    <span><button type="button" class="btn btn-info">ADD TO CART</button></span>
+                    <span><button data-name="Cute-Unicorn-Personalized-Sequin-Cushion"
+                        data-price="9.5" type="button" class="add-to-cart btn btn-info">ADD TO CART</button></span> <!--data-name mustn't have space, use - instead of-->
                 </div>
+
                 <div class="buyNow col-sm-8">
                     <span><button type="button" class="btn btn-info">BUY NOW (USD 9.50)</button></span>
                 </div>
+
             </div>
 
         </div>
@@ -217,15 +227,38 @@
 
     </div>
 <br>
-    <!-- Code onclick slide image product -->
-    <script src="./js/Product Details.js"></script>
 
     <!-- Scroll Top button -->
     <button onclick="topFunction()" id="scrTop" title="Go to top">Top</button>
-    <script src="../GIFTS ONLINE/js/ScrollTop.js"></script>
+
     <div style="clear: both;"></div>
 
+<!-- Show-cart table -->
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-cart table">
 
+                </table>
+                <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary order">Order now</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container">
@@ -274,7 +307,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text" style="color: white;">Copyright &copy; 2020 All Rights Reserved by GIFTS ONLINE <a href="#"></a>
+              <p class="copyright-text" style="color: white;">Copyright &copy; 2020 All Rights Reserved by Gift Shop <a href="#"></a>
               </p>
             </div>
             <!--icons-->
@@ -289,5 +322,13 @@
           </div>
         </div>
     </footer>
+
+    <!-- JS FILE -->
+
+    <!-- Code Product Details -->
+    <script src="./js/Product Details.js"></script>
+    <!-- Scroll Top button -->
+    <script src="./js/ScrollTop.js"></script>
+
 </body>
 </html>
