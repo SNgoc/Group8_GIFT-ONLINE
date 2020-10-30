@@ -5,13 +5,13 @@
     height: 25px;
 }
 .logoName{
-    width: 75px;
+    width: 70px;
     height: 25px;
 }
 
 /*Navigation bar*/
 .active{
-    border-bottom: 3px rgb(190, 43, 43);
+    border-bottom: 3px rgb(243, 182, 14);
     border-bottom-style: solid;
 }
 
@@ -37,11 +37,17 @@
 }
 
 .navbar3 li a:hover{
-    background-color: #4f9bda;
+    background-color: rgb(221, 216, 216);
 }
 
 .navbar3{
-    background-color: #d14352;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.navbar3 .ddnav3 a{
+    color: #d14352;
+    font-weight: bolder;
 }
 
 .btn{
@@ -61,14 +67,15 @@
   .ddnav3 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #4f9bda;
+    background-color:rgb(221, 216, 216);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .ddnav3 .dropdown-menu li a {
-    color: white;
+    color: #d14352;
+    font-weight: bolder;
     padding: 12px 16px;
     text-decoration: none;
     display: block;

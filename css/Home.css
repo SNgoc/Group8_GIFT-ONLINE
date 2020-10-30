@@ -46,11 +46,12 @@
 }
 /* header Sale */
 .Sale .headS{
-    text-align: center;
-    font-style: italic;
     font-weight: bolder;
-    color: blue;
-    background-color: palegreen;
+    border: solid black 1px;
+    color: #d14352;
+    font-size: 25px;
+    font-family: cursive;
+    background-color: rgb(240, 238, 238);
 }
 
 /* ----Carousel NewItem---- */
@@ -67,11 +68,12 @@
 }
 /* header NewItem */
 .NewItem .headN{
-    text-align: center;
-    font-style: italic;
     font-weight: bolder;
-    color: greenyellow;
-    background-color: green;
+    border: solid black 1px;
+    color: #d14352;
+    font-size: 25px;
+    font-family: cursive;
+    background-color: rgb(240, 238, 238);
 }
 
 /* ----Carousel BestSellers---- */
@@ -88,11 +90,12 @@
 }
 /* header Best Sellers */
 .BestS .headB{
-    text-align: center;
-    font-style: italic;
     font-weight: bolder;
-    color: goldenrod;
-    background-color: black;
+    border: solid black 1px;
+    color: #d14352;
+    font-size: 25px;
+    font-family: cursive;
+    background-color: rgb(240, 238, 238);
 }
 
 
