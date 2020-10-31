@@ -11,7 +11,8 @@
         <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <!-- CSS File-->
-    <link rel="stylesheet" href="./css/Product Details.css">
+    <link rel="stylesheet" href="./css/Product.css">
+    <link rel="stylesheet" href="./css/Add to Cart.css">
     <link rel="stylesheet" href="./css/About us.css">
         <!-- css Scroll Top -->
     <link rel="stylesheet" href="./css/scrollTop.css">
@@ -52,7 +53,10 @@
                 <li><a href="" style="color: white;">New Items</a></li>
                 <li><a href="" style="color: white;">Best Sellers</a></li>
                 <li><a class="btn btn-primary" href="#" role="button" style="color: #b33b48; background-color: white;"><span class="glyphicon glyphicon-heart"></span>Favorite</a></li>
-                <li><a class="btn btn-primary" href="#" role="button" style="background-color:#b33b48; border-color: white; color: white;"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                <!-- SHOPPING CART -->
+                <li><button type="button" class="btn btn-primary favorcart" data-toggle="modal" data-target="#cart" style="background-color:#b33b48; border-color: white; color: white;">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>Cart (<span class="total-count"></span>)</button>
+                </li>
             </ul>
         </div>
     </div>
@@ -106,9 +110,34 @@
         <p><a href="mailto:giftsonlinefpt@gmail.com" target="_top">Mail to</a></p>
     </div>
 
+    <!-- Show-cart table -->
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary order">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scroll Top button -->
     <button onclick="topFunction()" id="scrTop" title="Go to top">Top</button>
-    <script src="../GIFTS ONLINE/js/ScrollTop.js"></script>
+    <!-- Fix error with background footer -->
     <div style="clear: both;"></div>
 
 
@@ -175,5 +204,12 @@
           </div>
         </div>
     </footer>
+
+     <!-- JS FILE -->
+
+    <!-- ADD TO CART -->
+    <script src="./js/Add to Cart.js"></script>
+    <!-- Scroll Top button -->
+    <script src="./js/ScrollTop.js"></script>
 </body>
 </html>
