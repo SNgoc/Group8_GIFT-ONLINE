@@ -107,3 +107,8 @@
 footer .ftlinks li a{
     color: white;
 }
+
+/* User rate */
+.rate .checked{
+    color: orange;
+}
