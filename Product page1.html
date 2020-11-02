@@ -51,15 +51,17 @@
                 <li><a href="" style="color: white;">Sale !</a></li>
                 <li><a href="" style="color: white;">New Items</a></li>
                 <li><a href="" style="color: white;">Best Sellers</a></li>
-                <li><a class="btn btn-primary" href="#" role="button" style="color: #b33b48; background-color: white;"><span class="glyphicon glyphicon-heart"></span>Favorite</a></li>
+                <!-- FAVORITE -->
+                <li><button type="button" class="btn btn-primary favorcart" data-toggle="modal" data-target="#favor" style="color: #b33b48; background-color: white;">
+                    <span class="glyphicon glyphicon-heart"></span>Favorite (<span class="total-count Favor"></span>)</button>
+                </li>
                 <!-- SHOPPING CART -->
                 <li><button type="button" class="btn btn-primary favorcart" data-toggle="modal" data-target="#cart" style="background-color:#b33b48; border-color: white; color: white;">
-                    <span class="glyphicon glyphicon-shopping-cart"></span>Cart (<span class="total-count"></span>)</button>
+                    <span class="glyphicon glyphicon-shopping-cart"></span>Cart (<span class="total-count Cart"></span>)</button>
                 </li>
             </ul>
         </div>
     </div>
-
     
     <!--Navigation bar 3-->
     <div class="nav navbar-default navbar3">
@@ -428,30 +430,54 @@
         </div>    
     </div>
 
-    <!-- Show-cart table -->
-    <!-- Modal -->
-    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <table class="show-cart table">
+<!-- Show-favorite table -->
+<!-- Modal -->
+<div class="modal fade" id="favor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Favorite List</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-favor table">
 
-                    </table>
-                    <div>Total price: $<span class="total-cart"></span></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary order">Order now</button>
-                </div>
+                </table>
+                <div>Total in Favorite List: <span class="total-favor"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Show-cart table -->
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-cart table">
+
+                </table>
+                <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary order">Order now</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!--Pagination-->
     <div class="container">
@@ -515,7 +541,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text" style="color: white;">Copyright &copy; 2020 All Rights Reserved by Gift Shop <a href="#"></a>
+              <p class="copyright-text" style="color: white;">Copyright &copy; 2020 All Rights Reserved by GIFTS ONLINE <a href="#"></a>
               </p>
             </div>
             <!--icons-->
@@ -531,9 +557,11 @@
         </div>
     </footer>
 
-    <!-- JS FILE -->
+   <!-- JS FILE -->
 
-    <!-- ADD TO CART -->
+    <!-- ADD TO FAVORITE -->
+    <script src="./js/Add to Favorite.js"></script>
+    <!-- Code ADD TO CART -->
     <script src="./js/Add to Cart.js"></script>
     <!-- Scroll Top button -->
     <script src="./js/ScrollTop.js"></script>
