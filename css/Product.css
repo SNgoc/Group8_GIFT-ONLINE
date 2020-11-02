@@ -53,6 +53,10 @@ html {
     font-weight: bolder;
 }
 
+.navbar3 ul.nav-tabs li.active a{
+    cursor: pointer;
+}
+
 .btn{
     border-radius: 30px;
     font-weight: bold;
