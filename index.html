@@ -47,10 +47,13 @@
                 <li><a href="#Sale" style="color: white;">Sale !</a></li>
                 <li><a href="#New Items" style="color: white;">New Items</a></li>
                 <li><a href="#Best Sellers" style="color: white;">Best Sellers</a></li>
-                <li><a class="btn btn-primary favorcart" href="#" role="button" style="color: #b33b48; background-color: white;"><span class="glyphicon glyphicon-heart"></span>Favorite</a></li>
+                 <!-- FAVORITE -->
+                <li><button type="button" class="btn btn-primary favorcart" data-toggle="modal" data-target="#favor" style="color: #b33b48; background-color: white;">
+                    <span class="glyphicon glyphicon-heart"></span>Favorite (<span class="total-count Favor"></span>)</button>
+                </li>
                 <!-- SHOPPING CART -->
                 <li><button type="button" class="btn btn-primary favorcart" data-toggle="modal" data-target="#cart" style="background-color:#b33b48; border-color: white; color: white;">
-                    <span class="glyphicon glyphicon-shopping-cart"></span>Cart (<span class="total-count"></span>)</button>
+                    <span class="glyphicon glyphicon-shopping-cart"></span>Cart (<span class="total-count Cart"></span>)</button>
                 </li>
             </ul>
         </div>
@@ -292,30 +295,54 @@
 
     </div>
 
-    <!-- Show-cart table -->
-    <!-- Modal -->
-    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <table class="show-cart table">
+<!-- Show-favorite table -->
+<!-- Modal -->
+<div class="modal fade" id="favor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Favorite List</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-favor table">
 
-                    </table>
-                    <div>Total price: $<span class="total-cart"></span></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary order">Order now</button>
-                </div>
+                </table>
+                <div>Total in Favorite List: <span class="total-favor"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Show-cart table -->
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-cart table">
+
+                </table>
+                <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary order">Order now</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Scroll Top button -->
     <button onclick="topFunction()" id="scrTop" title="Go to top">Top</button>
@@ -390,6 +417,8 @@
 
     <!-- JS FILE -->
 
+    <!-- ADD TO FAVORITE -->
+    <script src="./js/Add to Favorite.js"></script>
     <!-- Code ADD TO CART -->
     <script src="./js/Add to Cart.js"></script>
     <!-- Scroll Top button -->
