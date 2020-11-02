@@ -16,7 +16,8 @@
 }
 
 .vertical-menu a:hover {
-  background-color: #4d1a1f;
+  background-color: rgb(221, 216, 216);
+  color:  #d14352;
 }
 
 .vertical-menu a.active {
@@ -32,18 +33,20 @@
     left: 222px;
     height: 81px;
     text-align: center;
-    background-color: #d14352;
+    background-color:rgb(221, 216, 216);
     font-family: fantasy;
     width: 200px;
 }
 .vertical-menu .rightMenu a{
-  color: white;
+  color: #d14352;
+  background-color: rgb(221, 216, 216);
 }
-.vertical-menu .rightMenu:hover{
-    background-color: #d14352;
+.vertical-menu .rightMenu li a:hover{
+    background-color:  #d14352;
+    color:  rgb(221, 216, 216);
 }
 .vertical-menu .rightMenu .divider{
-    background-color: #d14352;
+    background-color: rgb(221, 216, 216);
     height: 1px;
 }
 /* Auto dropdown menu */
