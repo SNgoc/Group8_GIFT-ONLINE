@@ -1,4 +1,9 @@
 
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Logo */
 .logo{
     height: 25px;
