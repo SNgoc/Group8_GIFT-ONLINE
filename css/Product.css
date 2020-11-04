@@ -27,6 +27,12 @@ html {
 }
 
 /* Category */
+/* nav-bar for mobile and tablet max-width:768px */
+@media screen and (max-width: 900px) {
+    .navbar3 ul {
+        width: 400px;
+    }
+}
 .navbar3 .active{
     margin-left: 95px;
 }
@@ -94,6 +100,7 @@ html {
     }
   
   .ddnav3:hover .dropdown-menu {display: block;}
+
 
 
 /*Products*/

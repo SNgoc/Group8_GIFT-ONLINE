@@ -49,11 +49,8 @@
     background-color: rgb(221, 216, 216);
     height: 1px;
 }
-/* Auto dropdown menu */
-@media only screen and (min-width: 768px) {
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 /* Caret-right */
