@@ -87,64 +87,34 @@
       </ul>
       </div>
 
-      <form class="form-horizontal" action="" onsubmit="return check()">
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="name">Name:</label>
-            <div class="col-sm-10">
-              <input type="name" class="form-control"  required id="name" placeholder="Enter name">
-            </div>
-          </div>
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="email">Email:</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" pattern="^\w+@\w+\.[a-z]{3}" required id="email" placeholder="Enter email">
-          </div>
+       <div id="main">
+        <div class="h-tag">
+        <h2> Login</h2>
         </div>
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="pwd">Password:</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\w]).{6,12}" required id="pwd" placeholder="Enter password">
-          </div>
+        <div class="login">
+        <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+        <td> Enter User Name :</td>
+        <td><input type="text" placeholder="Enter user name here" id="email" class="tb" /></td>
+        </tr>
+        <tr>
+        <td>Enter Password :</td>
+        <td>
+          <input type="password" placeholder="Enter Password here" id="pwd1" class="tb" />
+        </td>
+        </tr>
+        <tr>
+        <td></td>
+        <td>
+        <button type="submit" value="Login" class="btn" onClick="login()">Login</button></td>
+        </tr>
+        </table>
+        <div class="register login">
+          <p> Do you have an account?<a href="sign up.html"> Sign Up</a>.</p>
         </div>
-        <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Password-repeat:</label>
-            <div class="col-sm-10">
-              <input type="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\w]).{6,12}" required id="pwd-repeat" placeholder="Enter password-repeat">
-            </div>
-          </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox">
-              <label><input type="checkbox"> Remember me</label>
-            </div>
-          </div>
-          <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox">
-              <label><input type="checkbox"> Sign up for story</label>
-            </div>
-          </div>
         </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" onclick="check" class="btn btn-default">Submit</button>
-            <button type="reset" class="btn btn-default">Reset</button>
-          </div>
         </div>
-      </form>
-      <script>
-        function check(){
-          var name1 = document.getElementById("email").value;
-          var name2 = document.getElementById("pwd").value;
-          var name3 = document.getElementById("name").value;
-          var name4 = document.getElementById("pwd-repeat").value;
-          if (name1 == "email" && name2 == "pwd" && name3 == "name" && name4 == "pwdrepeat")
-          {
-            alert("Sign up successfully")
-          }  
-          return false;    
-        }
-      </script>
-
+     
           <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
