@@ -33,8 +33,8 @@
                 <li class="active"><a href="../Product page1.html" style="background-color: #4d1a1f; color: white;">SHOP</a></li>
                 <li><a href="#Location" style="color: white;">SHOP LOCATION</a></li>
                 <li><a href="../about us.html" style="color: white;">ABOUT US</a></li>
-                <li><a href="" style="color: white;"><span class="glyphicon glyphicon-user"></span>Login</a></li>
-                <li><a href="" style="background-color: limegreen; color: white;">Sign up</a></li>
+                <li><a href="../login.html" style="color: white;"><span class="glyphicon glyphicon-user"></span>Login</a></li>
+                <li><a href="../sign up.html" style="background-color: limegreen; color: white;">Sign up</a></li>
             </ul>
         </div>
     </div>
@@ -48,15 +48,15 @@
             </ul>
         <div class="container">
             <ul class="nav navbar-nav navbar-right nav2">
-                <li><a href="" style="color: white;">Sale !</a></li>
-                <li><a href="" style="color: white;">New Items</a></li>
-                <li><a href="" style="color: white;">Best Sellers</a></li>
+                <li><a href="../index.html" style="color: white;">Sale !</a></li>
+                <li><a href="../index.html" style="color: white;">New Items</a></li>
+                <li><a href="../index.html" style="color: white;">Best Sellers</a></li>
                 <!-- FAVORITE -->
-                <li><button type="button" class="btn btn-primary favorcart" data-toggle="modal" data-target="#favor" style="color: #b33b48; background-color: white;">
+                <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#favor" style="color: #b33b48; background-color: white;">
                     <span class="glyphicon glyphicon-heart"></span>Favorite (<span class="total-count Favor"></span>)</button>
                 </li>
                 <!-- SHOPPING CART -->
-                <li><button type="button" class="btn btn-primary favorcart" data-toggle="modal" data-target="#cart" style="background-color:#b33b48; border-color: white; color: white;">
+                <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart" style="background-color:#b33b48; border-color: white; color: white;">
                     <span class="glyphicon glyphicon-shopping-cart"></span>Cart (<span class="total-count Cart"></span>)</button>
                 </li>
             </ul>
@@ -66,37 +66,37 @@
     
     <!--Navigation bar 3-->
     <div class="nav navbar-default navbar3">
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="../Product page1.html">Categories</a></li>
-    
-            <li class="dropdown ddnav3"><a href="2.Cushion_Soft Toys.html">Cushions & Soft Toys</a>
-                <ul class="dropdown-menu">
-                    <li><a href="2.Cushion.html">Cushions</a></li>
-                    <li><a href="2.Soft Toys.html">Soft Toys</a></li>
-                </ul>
-            </li>
-    
-            <li class="dropdown ddnav3"><a href="1.Coffee Mugs_Tea Cups.html">Coffee Mugs & Tea Cups</a>
-                <ul class="dropdown-menu">
-                    <li><a href="1.Coffee Mugs.html">Coffee Mugs</a></li>
-                    <li><a href="1.Tea Cups.html">Tea Cups</a></li>
-                </ul>
-            </li>
-    
-            <li class="dropdown ddnav3"><a href="3.Fashions_Accessories.html">Fashion & Accessories</a>
-                <ul class="dropdown-menu">
-                    <li><a href="3.Fashions.html">Fashion</a></li>
-                    <li><a href="3.Accessories.html">Accessories</a></li>
-                </ul>
-            </li>
-    
-            <li class="dropdown ddnav3"><a href="4.Gift Cards.html">Gift Cards</a>
-                <ul class="dropdown-menu">
-                    <li><a href="4.Gift Cards.html">Gift cards</a></li>
-                </ul>
-            </li>
-        </ul>
-        </div>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="../Product page1.html">Categories</a></li>
+
+        <li class="dropdown ddnav3"><a href="2.Cushion_Soft Toys.html">Cushions & Soft Toys</a>
+            <ul class="dropdown-menu">
+                <li><a href="2.Cushion.html">Cushions</a></li>
+                <li><a href="2.Soft Toys.html">Soft Toys</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown ddnav3"><a href="1.Coffee Mugs_Tea Cups.html">Coffee Mugs & Tea Cups</a>
+            <ul class="dropdown-menu">
+                <li><a href="1.Coffee Mugs.html">Coffee Mugs</a></li>
+                <li><a href="1.Tea Cups.html">Tea Cups</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown ddnav3"><a href="3.Fashions_Accessories.html">Fashion & Accessories</a>
+            <ul class="dropdown-menu">
+                <li><a href="3.Fashions.html">Fashion</a></li>
+                <li><a href="3.Accessories.html">Accessories</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown ddnav3"><a href="4.Gift Cards.html">Gift Cards</a>
+            <ul class="dropdown-menu">
+                <li><a href="4.Gift Cards.html">Gift cards</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
 
 
     <!--PRODUCTS TAB-->
@@ -336,30 +336,6 @@
     </div>
 </div>
 
-<!-- Show-favorite table -->
-<!-- Modal -->
-<div class="modal fade" id="favor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Favorite List</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <table class="show-favor table">
-
-                </table>
-                <div>Total in Favorite List: <span class="total-favor"></span></div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Show-cart table -->
 <!-- Modal -->
 <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -402,7 +378,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-3 ftlinks">
-              <h6 style="font-weight: bold;">Gift Shop</h6>
+              <h6 style="font-weight: bold;">GIFTS ONLINE</h6>
               <ul>
                 <li><a href="4.Gift Cards.html">Gift Card</a></li>
                 <li><a href="2.Cushion_Soft Toys.html">Cushions & Soft Toys</a></li>
@@ -426,9 +402,9 @@
               <h6 style="font-weight: bold;">Quick Links</h6>
               <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="">Accounts</a></li>
+                <li><a href="../login.html">Accounts</a></li>
                 <li><a href="../about us.html">About Us</a></li>
-                <li><a href="">FAQ & Help</a></li>
+                <li><a href="../faq&help.html">FAQ & Help</a></li>
               </ul>
             </div>
             <!--location-->
@@ -451,10 +427,10 @@
             <!--icons-->
             <div class="col-md-4 col-sm-6 col-xs-12">
               <ul class="social-icons">
-                <li><a class="facebook" href="#"><i class="fa fa-facebook-official"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a></li>
+                <li><a class="twitter" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
               </ul>
             </div>
           </div>

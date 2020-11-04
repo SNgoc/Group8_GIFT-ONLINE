@@ -1,4 +1,4 @@
-
+/*SCROLL TO TOP*/
 //Get the button
 var mybutton = document.getElementById("scrTop");
 
@@ -12,7 +12,6 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
