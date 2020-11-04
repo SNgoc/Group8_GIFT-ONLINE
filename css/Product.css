@@ -128,7 +128,14 @@ html {
     font-size: 35px; 
     color: #d14352;
 }
-
+/* Sale product */
+p mark.markSale{
+    color: goldenrod;
+    background-color: black;
+}
+p del.delPrice{
+    color: black;
+}
 
 /*Footer*/
 footer .ftlinks li a{
