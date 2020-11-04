@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/footer.css">
         <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=".//css/register.css">
 </head>
 
 <body>
@@ -87,33 +88,25 @@
       </ul>
       </div>
 
-       <div id="main">
-        <div class="h-tag">
-        <h2> Login</h2>
+     <form action="" method="POST" onsubmit="return validate()">
+        <div class="register">
+          <h1>Register</h1>
+          <p>Please fill in the information to register</p>
+          <hr>
+              <label for="username"><b>Email</b></label>
+              <input type="text" placeholder="Enter your email" name="username" id="username" pattern="^\w+@\w+\.[a-z]{3}" required>
+              <label for="password"><b>Password</b></label>
+              <input type="password" placeholder="******" name="password" id="password">
+              <label for="password-repeat"><b>Confirm password</b></label>
+              <input type="password" placeholder="******" name="password-repeat" id="password-repeat">
+          <hr>
+            <input type="checkbox">To create an account please agree to our terms <a href="#">Terms &amp; Privacy</a>.
+            <button type="submit" class="submit">Sign Up</button>
         </div>
-        <div class="login">
-        <table cellspacing="2" align="center" cellpadding="8" border="0">
-        <tr>
-        <td> Enter User Name :</td>
-        <td><input type="text" placeholder="Enter user name here" id="email" class="tb" /></td>
-        </tr>
-        <tr>
-        <td>Enter Password :</td>
-        <td>
-          <input type="password" placeholder="Enter Password here" id="pwd1" class="tb" />
-        </td>
-        </tr>
-        <tr>
-        <td></td>
-        <td>
-        <button type="submit" value="Login" class="btn" onClick="login()">Login</button></td>
-        </tr>
-        </table>
         <div class="register login">
-          <p> Do you have an account?<a href="sign up.html"> Sign Up</a>.</p>
+          <p> Do you have an account?<a href="login.html">Log in</a>.</p>
         </div>
-        </div>
-        </div>
+        </form>
      
           <!-- FOOTER -->
   <footer class="site-footer">
@@ -178,5 +171,6 @@
       </div>
     </div>
 </footer>
+    <script type="./js/register.js"></script>
 </body>
 </html>
