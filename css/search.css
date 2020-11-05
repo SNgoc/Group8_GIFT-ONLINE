@@ -1,0 +1,45 @@
+
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    display: block;
+    width: 500px;
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+
+  /* enable absolute positioning */
+  .navbar2 .inner-addon { 
+    position: relative; 
+  }
+
+  /* style icon */
+  .navbar2 .inner-addon .glyphicon {
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 10px;
+  pointer-events: none;
+  }
+
+  /* align icon */
+  .navbar2 .left-addon .glyphicon  { left:  0px;}
+  .navbar2 .right-addon .glyphicon { right: 0px;}
+
+  /* add padding  */
+  .navbar2 .left-addon input  { padding-left:  30px; }
+  .navbar2 .right-addon input { padding-right: 30px; }
