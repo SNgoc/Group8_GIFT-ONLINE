@@ -151,6 +151,9 @@ html {
     color: orange;
 }
 /* INFORMATIVE PRODUCT */
+.textIntro{
+    width: 20cm;
+}
 .line {
     border-bottom: 1px solid;
     margin-top: 10px;
@@ -217,4 +220,27 @@ ul.textlist li{
 /*Footer*/
 footer .ftlinks li a{
     color: white;
+}
+
+/* SHOW CART TABLE */
+
+.show-cart li {
+    display: flex;
+}
+
+.modal-footer .order{
+    background-color: royalblue;
+}
+button.delete-item{
+    background-color: rgb(182, 74, 74);
+}
+button.minus-item{
+    border-radius: 0px;
+    background-color: white;
+    padding: 0px 20px 0px 10px;
+}
+button.plus-item{
+    border-radius: 0px;
+    background-color: white;
+    padding: 0px 20px 0px 10px;
 }
