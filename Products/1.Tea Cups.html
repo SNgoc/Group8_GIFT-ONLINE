@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../css/scrollTop.css">
         <!-- CSS FOOTER -->
     <link rel="stylesheet" href="../css/footer.css">
+        <!-- CSS Search -->
+    <link rel="stylesheet" href="../css/search.css">
         <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -43,8 +45,74 @@
     <!--Navigation bar 2-->
     <div class="nav navbar-default navbar2">
             <ul class="nav navbar-nav">
-                <li style="margin-left: 50px;"><input type="text" placeholder="Search product" name="search2" style="width: 500px; height: 52px">
-                <button type="submit" style="height: 52px; width: 52px; margin-left: -10px;"><i class="fa fa-search"></i></button></li>
+                <li style="margin-left: 50px;">
+                    <div class="inner-addon left-addon">
+                        <i class="glyphicon glyphicon-search" style=" font-size: 15px;"></i>
+                        <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search for products..." title="Type in a name" style="width: 500px; height: 52px;">
+                    </div>
+                    <ul id="myUL">
+                        <li><a href="./Fashions + Accessories/Fashions/Always Right T-Shirt/Always Right Tee.html">Always Right T-Shirt</a></li>
+                        <li><a href="./Coffee Mugs + Tea Cups/Tea Cups/Art Designed (Set of 6 Cups)/Art Designed Cup Set.html">Art Designed (Set of 6 Cups)</a></li>
+
+                        <li><a href="./Coffee Mugs + Tea Cups/Coffee Mugs/Best Dad White Mug/Best Dad White Mug.html">Best Dad White Mug</a></li>
+                        <li><a href="./Gift Cards/Best Mom Greeting Card/Best Mom Card.html">Best Mom Greeting Card</a></li>
+                        <li><a href="./Fashions + Accessories/Fashions/Black White T-Shirt/Black White Tee.html">Black & White T-Shirt</a></li>
+                        <li><a href="./Coffee Mugs + Tea Cups/Tea Cups/Black Tea Cups (Set of 6 Cups)/Black Tea Cups Set.html">Black Tea Cups (Set of 6 Cups)</a></li>
+                        <li><a href="./Cushions + Soft Toys/Soft Toys/Bunny Soft Toy with Choco/Bunny Soft Toy.html">Bunny Soft Toy with Choco</a></li>
+
+                        <li><a href="./Cushions + Soft Toys/Cushions/Canvas Print Cushion/Canvas Print Cushion.html">Canvas Print Cushion</a></li>
+                        <li><a href="./Cushions + Soft Toys/Soft Toys/Couple Bears Soft Toy/Couple Bear.html">Couple Bears Soft Toy</a></li>
+                        <li><a href="./Coffee Mugs + Tea Cups/Coffee Mugs/Customize Brownie Mug/Customize Brownie Mug.html">Customize Brownie Mug</a></li>
+                        <li><a href="./Cushions + Soft Toys/Soft Toys/Cute Sitting Dog Soft Toy/Cute Sitting Dog.html">Cute Sitting Dog Soft Toy</a></li>
+                        <li><a href="./Cushions + Soft Toys/Cushions/Cute Unicorn Personalized Sequin Cushion/Cute Unicorn Sequin Cushion.html">Cute Unicorn Cushion</a></li>
+
+                        <li><a href="./Cushions + Soft Toys/Cushions/Father Son Cushion/Father Son Cushion.html">Father & Son Cushion</a></li>
+                        <li><a href="./Coffee Mugs + Tea Cups/Coffee Mugs/Flower Mug/Flower Mug.html">Flower Mug</a></li>
+                        <li><a href="./Coffee Mugs + Tea Cups/Coffee Mugs/Friends White Mug/Friends White Mug.html">Friends White Mug</a></li>
+
+                        <li><a href="./Cushions + Soft Toys/Cushions/Age Gets Better with Wine Cushion/Age Get Better.html">Gets Better with Wine Cushion</a></li>
+                        <li><a href="./Fashions + Accessories/Accessories/Green Stone Handmade Ring/Green Stone Ring.html">Green Stone Handmade Ring</a></li>
+
+                        <li><a href="./Coffee Mugs + Tea Cups/Coffee Mugs/Hot to Cold Magic Mug/Hot to Cold Magic Mug.html">Hot to Cold Magic Mug</a></li>
+
+                        <li><a href="./Coffee Mugs + Tea Cups/Coffee Mugs/I Love You Mug/I Love You Mug.html">I Love You Mug</a></li>
+                        <li><a href="./Gift Cards/I'm Sorry Card/Im Sorry.html">I'm Sorry Card</a></li>
+                        <li><a href="./Gift Cards/It's Your Birthday Card/Birthday Card.html">It's Your Birthday Card</a></li>
+
+                        <li><a href="./Fashions + Accessories/Accessories/Maroon Tie Set/Maroon Tie Set.html">Maroon Tie Set</a></li>
+                        <li><a href="./Fashions + Accessories/Accessories/Men's Purple Set Accessories/Men Purple Set.html">Men's Purple Set Accessories</a></li>
+
+                        <li><a href="./Cushions + Soft Toys/Cushions/New Home Cushion/New Home Cushion.html">New Home Cushion</a></li>
+
+                        <li><a href="./Cushions + Soft Toys/Cushions/Older Fabulous Cushion/Old Fabulous.html">Older Fabulous Cushion</a></li>
+                        <li><a href="./Coffee Mugs + Tea Cups/Coffee Mugs/One Love Mug/One Love Mug.html">One Love Mug</a></li>
+
+                        <li><a href="./Cushions + Soft Toys/Soft Toys/Pink Teddy Bear/Pink Teddy.html">Pink Teddy Bear</a></li>
+
+                        <li><a href="./Fashions + Accessories/Accessories/Rectangular Handmade Ring/Rectangular Ring.html">Rectangular Handmade Ring</a></li>
+
+                        <li><a href="./Coffee Mugs + Tea Cups/Tea Cups/Silver Customize Tea Cups (Set of 6 Cups)/Silver Tea Cups Set.html">Silver Customize Tea Cups (Set of 6 Cups)</a></li>
+                        <li><a href="./Fashions + Accessories/Accessories/Slim Wallet with a Message/Slim Message Wallet.html">Slim Wallet with a Message</a></li>
+                        <li><a href="./Gift Cards/Sorry My Love Card/Sorry Love Card.html">Sorry My Love Card</a></li>
+
+                        <li><a href="./Coffee Mugs + Tea Cups/Coffee Mugs/Tea Me Mug/Tea Me Mug.html">Tea Me Mug</a></li>
+                        <li><a href="./Fashions + Accessories/Accessories/Timex Gold & Silver Watch/Timex Watch.html">Timex Gold & Silver Watch</a></li>
+                        <li><a href="./Fashions + Accessories/Fashions/Together Forever T-Shirt/Together Forever Tee.html">Together & Forever T-Shirt</a></li>
+                        <li><a href="./Cushions + Soft Toys/Cushions/Traditional Canvas Print Cushion(Set of 5)/Traditional Canvas Print.html">Traditional Canvas Print Cushion(Set of 5)</a></li>
+
+                        <li><a href="./Fashions + Accessories/Accessories/Ultra Slim Men Wallet/Ultra Slim Wallet.html">Ultra Slim Men Wallet</a></li>
+                        <li><a href="./Fashions + Accessories/Fashions/US T-Shirt/US Tee.html">US T-Shirt</a></li>
+
+                        <li><a href="./Fashions + Accessories/Accessories/Watch in Ivory and Coral/Ivory and Coral Watch.html">Watch in Ivory and Coral</a></li>
+                        <li><a href="./Cushions + Soft Toys/Soft Toys/White Huge Bear/White Huge Bear.html">White Huge Bear</a></li>
+                        <li><a href="./Cushions + Soft Toys/Soft Toys/White Teddy Bear with Chocolate Bars/White Teddy Bear.html">White Teddy Bear with Chocolate Bars</a></li>
+
+                        <li><a href="./Coffee Mugs + Tea Cups/Tea Cups/Yellow Border Tea Cups (Set of 6 Cups)/Yellow Border Tea Cups Set.html">Yellow Border Tea Cups (Set of 6 Cups)</a></li>
+                        <li><a href="./Gift Cards/You're my Hero Greeting Card/My Hero Card.html">You're my Hero Greeting Card</a></li>
+
+                    </ul>
+                    <script src="../js/search.js"></script>
+                </li>
             </ul>
         <div class="container">
             <ul class="nav navbar-nav navbar-right nav2">
@@ -107,7 +175,7 @@
             <div class="panel-group products">
                 <div class="col-sm-3">
                     <div class="panel panel-default">
-                        <div class="panel-heading"><a href=""><img src="./Coffee Mugs + Tea Cups/Tea Cups/Silver Customize Tea Cups (Set of 6 Cups)/1.jpg" style="width: 100%; height: 100%;"></a></div>
+                        <div class="panel-heading"><a href="./Coffee Mugs + Tea Cups/Tea Cups/Silver Customize Tea Cups (Set of 6 Cups)/Silver Tea Cups Set.html"><img src="./Coffee Mugs + Tea Cups/Tea Cups/Silver Customize Tea Cups (Set of 6 Cups)/1.jpg" style="width: 100%; height: 100%;"></a></div>
                         <div class="panel-body">
                             Silver Customize Tea Cups <br><br>
                             <p>USD 35.5</p>
@@ -125,7 +193,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="panel panel-default">
-                        <div class="panel-heading"><a href=""><img src="./Coffee Mugs + Tea Cups/Tea Cups/Black Tea Cups (Set of 6 Cups)/1.jpg" style="width: 100%; height: 100%;"></a></div>
+                        <div class="panel-heading"><a href="./Coffee Mugs + Tea Cups/Tea Cups/Black Tea Cups (Set of 6 Cups)/Black Tea Cups Set.html"><img src="./Coffee Mugs + Tea Cups/Tea Cups/Black Tea Cups (Set of 6 Cups)/1.jpg" style="width: 100%; height: 100%;"></a></div>
                         <div class="panel-body">
                             Black Tea Cups <br><br>
                             <p>USD 23.5</p>
@@ -143,7 +211,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="panel panel-default">
-                        <div class="panel-heading"><a href=""><img src="./Coffee Mugs + Tea Cups/Tea Cups/Yellow Border Tea Cups (Set of 6 Cups)/1.jpg" style="width: 100%; height: 100%;"></a></div>
+                        <div class="panel-heading"><a href="./Coffee Mugs + Tea Cups/Tea Cups/Yellow Border Tea Cups (Set of 6 Cups)/Yellow Border Tea Cups Set.html"><img src="./Coffee Mugs + Tea Cups/Tea Cups/Yellow Border Tea Cups (Set of 6 Cups)/1.jpg" style="width: 100%; height: 100%;"></a></div>
                         <div class="panel-body">
                             Yellow Border Tea Cups <br><br>
                             <p>USD 22</p>
@@ -161,7 +229,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="panel panel-default">
-                        <div class="panel-heading"><a href=""><img src="./Coffee Mugs + Tea Cups/Tea Cups/Art Designed (Set of 6 Cups)/1.jpg" style="width: 100%; height: 100%;"></a></div>
+                        <div class="panel-heading"><a href="./Coffee Mugs + Tea Cups/Tea Cups/Art Designed (Set of 6 Cups)/Art Designed Cup Set.html"><img src="./Coffee Mugs + Tea Cups/Tea Cups/Art Designed (Set of 6 Cups)/1.jpg" style="width: 100%; height: 100%;"></a></div>
                         <div class="panel-body">
                             Art Designed Tea Cups <br><br>
                             <p>USD 18.5</p>
