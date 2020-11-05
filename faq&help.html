@@ -116,8 +116,14 @@
                 <li><a href="" style="color: white;">Sale !</a></li>
                 <li><a href="" style="color: white;">New Items</a></li>
                 <li><a href="" style="color: white;">Best Sellers</a></li>
-                <li><a class="btn btn-primary favorcart" href="#" role="button" style="color: #b33b48; background-color: white;"><span class="glyphicon glyphicon-heart"></span>Favorite</a></li>
-                <li><a class="btn btn-primary favorcart" href="#" role="button" style="background-color:#b33b48; border-color: white; color: white;"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                <!-- FAVORITE -->
+                <li><button type="button" class="btn btn-primary favorcart" data-toggle="modal" data-target="#favor" style="color: #b33b48; background-color: white;">
+                    <span class="glyphicon glyphicon-heart"></span>Favorite (<span class="total-count Favor"></span>)</button>
+                </li>
+                <!-- SHOPPING CART -->
+                <li><button type="button" class="btn btn-primary favorcart" data-toggle="modal" data-target="#cart" style="background-color:#b33b48; border-color: white; color: white;">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>Cart (<span class="total-count Cart"></span>)</button>
+                </li>
             </ul>
         </div>
     </div>
@@ -213,15 +219,63 @@
     <b>Questions?</b> Contact Customer Service at +8428.3993.4933.</p>
     </div>
 
-        <!-- Scroll Top button -->
-        <button onclick="topFunction()" id="scrTop" title="Go to top">Top</button>
-        <script src="./js/ScrollTop.js"></script>
-        <!-- end -->
-        <!-- Fix error with background footer -->
-        <div style="clear: both;"></div>
-    
-        <!-- FOOTER -->
-      <footer class="site-footer">
+<!-- Show-favorite table -->
+<!-- Modal -->
+<div class="modal fade" id="favor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Favorite List</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-favor table">
+
+                </table>
+                <div>Total in Favorite List: <span class="total-favor"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Show-cart table -->
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-cart table">
+
+                </table>
+                <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary order">Order now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scroll Top button -->
+    <button onclick="topFunction()" id="scrTop" title="Go to top">Top</button>
+    <!-- Fix error with background footer -->
+    <div style="clear: both;"></div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-3 ftlinks">
@@ -250,7 +304,7 @@
               <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="">Accounts</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="about us.html">About Us</a></li>
                 <li><a href="">FAQ & Help</a></li>
               </ul>
             </div>
@@ -268,7 +322,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text" style="color: white;">Copyright &copy; 2020 All Rights Reserved by GIFT ONILINE <a href="#"></a>
+              <p class="copyright-text" style="color: white;">Copyright &copy; 2020 All Rights Reserved by GIFTS ONLINE <a href="#"></a>
               </p>
             </div>
             <!--icons-->
@@ -283,5 +337,14 @@
           </div>
         </div>
     </footer>
+
+    <!-- JS FILE -->
+
+    <!-- ADD TO FAVORITE -->
+    <script src="./js/Add to Favorite.js"></script>
+    <!-- Code ADD TO CART -->
+    <script src="./js/Add to Cart.js"></script>
+    <!-- Scroll Top button -->
+    <script src="./js/ScrollTop.js"></script>
 </body>
 </html>

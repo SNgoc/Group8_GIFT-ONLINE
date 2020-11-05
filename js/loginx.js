@@ -15,14 +15,14 @@ function login()
   {
     alert("Enter valid email id.");
   }
-  else if(pwd.length < 6 || pwd.length > 6)
+  else if(pwd.length < 4 || pwd.length > 12)
   {
-    alert("Password min and max length is 6.");
+    alert("Wrong Password!!! Password min is 4 and max length is 12.");
   }
   else
   {
-alert('Thank You for Login & You are Redirecting to Campuslife Website');
+alert('Thank You for Login & You are Redirecting to GIFTS ONLINE HOME');
 //Redirecting to other page or webste code or you can set your own html page.
-     window.location = "http://www.campuslife.co.in";
+     window.location = "https://sngoc.github.io/GIFTS-ONLIN/";
     }
 }		
