@@ -129,11 +129,11 @@ html {
     color: #d14352;
 }
 /* Sale product */
-p mark.markSale{
+mark.markSale{
     color: goldenrod;
     background-color: black;
 }
-p del.delPrice{
+del.delPrice{
     color: black;
 }
 

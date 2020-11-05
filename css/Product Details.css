@@ -170,6 +170,14 @@ h5.Htext{
 ul.textlist li{
     margin-left: 30px;
 }
+/* Sale product */
+mark.markSale{
+    color: goldenrod;
+    background-color: black;
+}
+del.delPrice{
+    color: red;
+}
 
 /* ADD TO FAVORITE, CART, BUY BUTTON */
 /* For Tablet and mobile */
