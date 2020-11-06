@@ -37,6 +37,10 @@ html {
 }
 
 /* ----Carousel Items---- */
+.HomeItem .carousel-indicators li{
+    background-color: #423f40;
+}
+
 /* Panel shadow */
 .HomeItem .itemShow{
     /* border box shadow panel */
