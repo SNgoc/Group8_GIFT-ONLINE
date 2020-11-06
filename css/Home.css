@@ -180,3 +180,9 @@ mark.markSale{
 del.delPrice{
     color: black;
 }
+
+/* fix error img auto dropdown out row when resize browser */
+.homeSlide {
+    margin-top: -385px;
+    margin-left: 223px;
+}
