@@ -171,3 +171,12 @@ button.plus-item{
     background-color: white;
     padding: 0px 20px 0px 10px;
 }
+
+/* Sale product */
+mark.markSale{
+    color: goldenrod;
+    background-color: black;
+}
+del.delPrice{
+    color: black;
+}
