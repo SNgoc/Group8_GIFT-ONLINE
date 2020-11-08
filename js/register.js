@@ -1,23 +1,14 @@
 function validate() {
-	var u = document.getElementById("username").value;
 	var p1 = document.getElementById("password").value;
-	var p2 = document.getElementById("password-repeat").value;
+    var p2 = document.getElementById("password-repeat").value;
+    
+    if (p2 == p1) {
+        alert ("Sign up success!");
+    }
+    if (p2 != p1) {
+        alert ("Password not match, please try again!");
+        event.preventDefault();
+    }
 	  
-	if(u== "") {
-	alert("Enter your username!");
-	return false;
-	}
-	if(p1 == "") {
-	alert("Enter your password!");
-	return false;
-	}
-	if(p2 == "") {
-	alert("Confirm your password!");
-	return false;
-	}
-	  
-	alert("Congratulations! You have successfully registered");
-	  
-	return true;
-	}
+}
 	
