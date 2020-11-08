@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="./css/search.css">
         <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Feedback-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/feedback.css" />
 </head>
 <body>
     <div class="nav navbar-default" style="background-color: #d14352;">
@@ -218,7 +221,22 @@
     You can track your order status 24/7 on the web site by logging into your account. Or, you may request information about your order by calling 8Ducky Gift Shop Customer Service at +8428.3993.4933. Please have your order number ready so we can help you more quickly and accurately. If your call is received after business hours, it will be returned the next business day.<br><br>
     <b>Questions?</b> Contact Customer Service at +8428.3993.4933.</p>
     </div>
-
+ <!--Feedback-->
+    <div id="feedback">
+		<div id="feedback-form" style='display:none;' class="col-xs-4 col-md-4 panel panel-default">
+			<form method="POST" action="/feedback" class="form panel-body" role="form">
+				<div class="form-group">
+					<input class="form-control" name="email" autofocus placeholder="Your e-mail" type="email" />
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" name="body" required placeholder="Please write your feedback here..." rows="5"></textarea>
+				</div>
+				<button class="btn btn-primary pull-right" type="submit">Send</button>
+			</form>
+		</div>
+		<div id="feedback-tab">Feedback</div>
+	</div>
+        
 <!-- Show-favorite table -->
 <!-- Modal -->
 <div class="modal fade" id="favor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -345,5 +363,10 @@
     <script src="./js/Add to Cart.js"></script>
     <!-- Scroll Top button -->
     <script src="./js/ScrollTop.js"></script>
+        <!--Feedback-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="./js/feedback.js"></script>
+
 </body>
 </html>
