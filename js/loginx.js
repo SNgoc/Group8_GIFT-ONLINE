@@ -23,6 +23,6 @@ function login()
   {
 alert('Thank You for Login & You are Redirecting to GIFTS ONLINE HOME');
 //Redirecting to other page or webste code or you can set your own html page.
-     window.location = "https://sngoc.github.io/GIFTS-ONLIN/";
+     window.location = "https://sngoc.github.io/Group8_GIFT-ONLINE/";
     }
 }		
