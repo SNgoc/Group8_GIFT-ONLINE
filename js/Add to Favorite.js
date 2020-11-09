@@ -17,14 +17,14 @@ var Favorite = (function () {
 
     // Save favor
     function saveFavor() {
-        sessionStorage.setItem("Favorite", JSON.stringify(favor));
+        localStorage.setItem("Favorite", JSON.stringify(favor));
     }
 
     // Load favor
     function loadFavor() {
-        favor = JSON.parse(sessionStorage.getItem("Favorite"));
+        favor = JSON.parse(localStorage.getItem("Favorite"));
     }
-    if (sessionStorage.getItem("Favorite") != null) {
+    if (localStorage.getItem("Favorite") != null) {
         loadFavor();
     }
 
