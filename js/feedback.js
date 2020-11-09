@@ -16,3 +16,7 @@ $(function() {
 		event.preventDefault();
 	});
 });
+
+function myFunction() {
+	alert("Successful!!!");
+  };
