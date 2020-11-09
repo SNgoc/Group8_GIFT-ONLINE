@@ -19,6 +19,8 @@ body
      border-top:3px double #f1f1f1; 
      border-bottom:3px double #f1f1f1; 
      padding-top:20px;
+     background-color: white;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    }
    #main table
    {
@@ -29,10 +31,9 @@ body
   {
     height:28px; 
     width:230px; 
-    border:1px solid #27a465; 
+    border:2px solid #d14352; 
     color:#27a465; 
     font-weight:bold; 
-    border-left:5px solid #f7f7f7; 
     opacity:0.9;
   }
 
