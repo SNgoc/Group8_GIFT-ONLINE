@@ -208,15 +208,15 @@
               <input class="checkText" type="text" id="ccnum" name="cardnumber" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" 
               placeholder="Example: 1111-2222-3333-4444" required>
               <label for="expmonth">Exp Month</label>
-              <input class="checkText" type="text" id="expmonth" name="expmonth" placeholder="Example: September" pattern="[0-9]" required>
+              <input class="checkText" type="number" id="expmonth" name="expmonth" placeholder="Exp Month" required>
               <div class="row Payment">
                 <div class="col-50 Paycheck">
                   <label for="expyear">Exp Year</label>
-                  <input class="checkText" type="text" id="expyear" name="expyear" placeholder="Example: 2020" pattern="[0-9]" required>
+                  <input class="checkText" type="text" id="expyear" name="expyear" placeholder="Example: 2020" pattern="[0-9]{4}" required>
                 </div>
                 <div class="col-50 Paycheck">
                   <label for="cvv">CVV</label>
-                  <input class="checkText" type="text" id="cvv" name="cvv" placeholder="Example: 352" pattern="[0-9]" required>
+                  <input class="checkText" type="number" id="cvv" name="cvv" placeholder="Example: 352"required>
                 </div>
               </div>
             </div>
